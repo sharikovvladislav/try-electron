@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron src/App.js",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "clean": "rimraf \"+(test|src)/**/*+(.d.ts|.js|.map)\""
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -19,6 +20,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.6.2",
+    "rimraf": "^2.6.1",
     "tsc": "^1.20150623.0"
   }
 }
